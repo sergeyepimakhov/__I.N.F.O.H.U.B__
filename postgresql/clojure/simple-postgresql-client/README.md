@@ -1,6 +1,6 @@
 # simple-postgresql-client
 
-FIXME: description
+http://clojure-doc.org/articles/ecosystem/java_jdbc/home.html
 
 ## Installation
 
