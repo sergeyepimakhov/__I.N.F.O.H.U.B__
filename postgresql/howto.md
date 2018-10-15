@@ -48,3 +48,16 @@ conn.commit()
 cur.close()
 conn.close()
 ```
+
+
+### Pgs Cli
+Taken from here https://www.pgcli.com/
+```
+pip install pgcli
+
+pgcli local_database
+
+pgcli postgres://amjith:passw0rd@example.com:5432/app_db
+
+pgcli -h localhost -p 5432 -U amjith app_db
+```
