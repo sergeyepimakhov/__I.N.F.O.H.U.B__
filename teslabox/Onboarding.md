@@ -110,5 +110,81 @@ sudo apt install -y leiningen
 lein -v
 ```
 
-Clojure licence for Intellij can be found here [Confluence](https://confluence.scm.otto.de/display/EC/Cursive-Lizenzen)
+### Install Cursive (Clojure REPL) in Intellij
+[link](https://cursive-ide.com/userguide/index.html)
+
+Clojure licence for Intellij can be found here 
+[Confluence](https://confluence.scm.otto.de/display/EC/Cursive-Lizenzen)
+
+
+### AWS Cli
+[link](https://aws.amazon.com/cli/)
+
+```$xslt
+pip install awscli
+```
+
+Please configure AWS afterwards
+
+```$xslt
+aws configure
+AWS Access Key ID [None]: ***
+AWS Secret Access Key [None]: ***
+Default region name [None]: eu-central-1
+Default output format [None]: json
+```
+
+### Tesla Toolbox
+#### Swamp
+Swamp should be installed from here [link](https://github.com/felixb/swamp/releases)
+
+```$xslt
+cd /usr/local/bin/
+sudo wget https://github.com/felixb/swamp/releases/download/v0.8/swamp_amd64
+sudo chmod +x swamp_amd64
+sudo ln -s swamp_amd64 swamp
+```
+
+#### Alias
+Tesla alias are located here [git](https://github.com/otto-ec/tsl_toolbox/blob/master/team-alias).
+You could copy them and append to a script in your `/etc/bash.bashrc`. Also you need to set `OCN_USER` variable
+
+```$xslt
+export OCN_USER="your_ocn_name"
+```
+
+#### Distribute ssh keys
+```$xslt
+# copy from distribute-ssh-key toolbox
+sudo cp distribute-ssh-key /usr/local/bin
+cd /usr/local/bin
+sudo chmod +x distribute-ssh-key 
+```
+
+### Terraform
+[link](https://www.terraform.io/)
+
+```$xslt
+cd /usr/local/bin/
+sudo wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
+sudo unzip terraform_0.11.8_linux_amd64.zip
+sudo rm terraform_0.11.8_linux_amd64.zip
+
+# Test it
+terraform
+```
+
+### JQ
+[link](https://stedolan.github.io/jq/)
+```$xslt
+cd /usr/local/bin
+
+sudo wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
+sudo chmod +x jq-linux64
+sudo ln -s jq-linux64 jq
+
+# Test it
+jq
+```
+
 
