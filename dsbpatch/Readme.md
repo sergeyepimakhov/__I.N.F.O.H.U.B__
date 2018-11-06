@@ -14,6 +14,26 @@ It can be also a launcher create. Take the Zeppelin logo and make the command
 ```
 firefox localhost:8080
 ``` 
+Install R
+```
+# Config the repo
+sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+gpg -a --export E084DAB9 | sudo apt-key add -
+
+# Install
+sudo apt-get install r-base
+
+# Set user group as own
+sudo chown -R $USER:$USER /usr/local/lib/R/
+```
+Install packages devtools, knitr, ggplot2, etc...
+```
+R -e "install.packages('devtools', repos = 'http://cran.rstudio.org'')"
+R -e "install.packages('knitr', repos = 'http://cran.rstudio.org'')"
+R -e "install.packages('ggplot2', repos = 'http://cran.rstudio.org'')"
+R -e "install.packages(c('devtools','mplot', 'googleVis'), repos = 'http://cran.rstudio.org''); require(devtools); install_github('ramnathv/rCharts')"
+```
 
 ###Anaconda
 update Anaconda to version 3 in the folder `/opt/Anaconda3-5.3.0-Linux-x86_64`. 
