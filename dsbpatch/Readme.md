@@ -1,7 +1,15 @@
 ## DSB patch
 
 ###Zeppelin
-install Zeppelin, make it run automatic
+install Zeppelin, make it run automatic. In the folder `/etc/profile.d` can be a small script created
+```
+zeppelin start
+
+```
+Where `zeppelin` is
+```
+zeppelin -> /opt/zeppelin/zeppelin-0.8.0-bin-all/bin/zeppelin-daemon.sh*
+```
 It can be also a launcher create. Take the Zeppelin logo and make the command
 ```
 firefox localhost:8080
