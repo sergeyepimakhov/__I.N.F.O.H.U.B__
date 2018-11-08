@@ -199,11 +199,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dsbpatch" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datascience" />
       <recent name="$PROJECT_DIR$/teslabox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datascience/textmining" />
+      <recent name="$PROJECT_DIR$/dsbpatch" />
     </key>
   </component>
   <component name="RunDashboard">
