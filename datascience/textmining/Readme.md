@@ -1,3 +1,6 @@
+# Text Mining Labs
+Here I will learn some best practises in the text mining.
+
 ## Text Mining links
 
 - https://nlpforhackers.io/word-embeddings/ 
