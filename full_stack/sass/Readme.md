@@ -27,7 +27,7 @@ Update
     
     touch mystyle.scss
     
-Content of ```mystyle.csss```
+Content of ```mystyle.scss```
 
     $mycolor: #333;
     
@@ -42,7 +42,7 @@ Run it
     
 With watch
 
-    mv mystyle.scss sass/
+    mv mystyle.scss scss/
     sass --watch scss:css
     
     # sudo apt-get install ruby-listen
