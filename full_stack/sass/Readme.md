@@ -8,10 +8,9 @@ Sass is a style sheet language. The language interprets or compiles .sass files 
 on Ruby.
 
 ### How to install on Ubuntu
-    sudo apt-get install ruby # or ruby-full
-    sudo gem 
-    # sudo apt-get install ruby-sass
-    sass -v # Sass 3.2.12 (Media Mark)
+    sudo apt-get install ruby-full build-essential rubygems
+    sudo gem install sass
+    sass -v # Ruby Sass 3.7.3
     
 ### Basic Usage
 Watch
