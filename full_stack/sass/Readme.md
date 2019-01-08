@@ -3,6 +3,11 @@
 ### Sass is the most mature, stable, and powerful professional grade CSS extension language in the world 
 ### [https://sass-lang.com/]
 
+### Concept
+CSS can be fun, but stylesheets are getting larger, more complex, and harder to maintain. 
+This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet
+like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.
+
 ### About It
 Sass is a style sheet language. The language interprets or compiles .sass files into .css files. The interpreter is
 on Ruby.
@@ -45,4 +50,60 @@ With watch
     mv mystyle.scss scss/
     sass --watch scss:css
     
-    # sudo apt-get install ruby-listen
+### Variables
+
+Variables as a way to store information that you want to reuse in your stylesheet.
+    
+    $mycolor: #333;
+    $myfont: Arial, Sans-serif
+        
+    // body
+    body {
+        color: $mycolor;
+        font-family: $myfont
+    }
+    
+### Comments
+    // inline comment
+    
+    /* multiline
+    *  comments
+    */
+    
+### Nesting
+
+CSS does't provide the nesting or visual hierarchy, but SASS does.
+
+    // nesting
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+      }
+      a {
+        display: block;
+        padding: 6px 12px;
+      }
+    }
+    
+### Partials and Imports
+
+Little snippets of CSS that can be included in other Sass files. 
+This is a great way to modularize your CSS and help keep things easier to maintain. 
+A module schould start with a leading underscore ```_partial.scss```.
+Then it can be imported via ```@import```
+
+    // _partial.scss
+    html,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    // mystyle.scss
+    @import "partial"
+
+

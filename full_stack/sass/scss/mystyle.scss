@@ -1,5 +1,29 @@
 $mycolor: #333;
+$myfont: Arial, Sans-serif;
 
+// variables
 body {
   color: $mycolor;
+  font-family: $myfont;
 }
+
+// nesting
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+  }
+}
+
+// imports
+@import "partial";
+
+
+

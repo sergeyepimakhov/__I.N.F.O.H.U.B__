@@ -1,2 +1,19 @@
 body {
-  color: #333333; }
+  color: #333;
+  font-family: Arial, Sans-serif; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px; }
+
+html,
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=mystyle.css.map */
