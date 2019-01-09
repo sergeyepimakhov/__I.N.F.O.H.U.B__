@@ -145,3 +145,13 @@ Then it can be imported via ```@import```
 ### Math
 
 
+    p {
+      $width: 1000px;
+      width: $width/2;            // Uses a variable, does division
+      width: round(1.5)/2;        // Uses a function, does division
+      height: (500px/2);          // Uses parentheses, does division
+      margin-left: 5px + 8px/2px; // Uses +, does division
+      font: (italic bold 10px/8px); // In a list, parentheses don't count
+    }
+
+
