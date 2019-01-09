@@ -1,7 +1,7 @@
 # Sass
 ## Syntactically Awesome Style Sheets
 ### Sass is the most mature, stable, and powerful professional grade CSS extension language in the world 
-### [https://sass-lang.com/]
+### [https://sass-lang.com/documentation/file.SASS_REFERENCE.html]
 
 ### Concept
 CSS can be fun, but stylesheets are getting larger, more complex, and harder to maintain. 
@@ -28,6 +28,16 @@ Update
     sass --update input.sass:output.css
     sass --update input-dir:output-dir
     
+Interactive Shell
+
+    sass -i
+    >> 1px + 1px + 1px
+    3px
+    >> #777 + #888
+    white
+    
+    
+    
 ### Try it
     
     touch mystyle.scss
@@ -49,6 +59,17 @@ With watch
 
     mv mystyle.scss scss/
     sass --watch scss:css
+    
+### Data Types
+
+- Numbers (1.2, 13, 10px)
+- Strings ("mystr", foo)
+- Colors (#ffffff, rgba(255, 0, 0, 0.5))
+- Booleans (true, false)
+- Nulls (null)
+- Lists separated by space or comma (1.5em 1em; Arial, sns-serif)
+- Maps (key1: value1, key2: value2)
+- Functions
     
 ### Variables
 
@@ -105,5 +126,22 @@ Then it can be imported via ```@import```
     
     // mystyle.scss
     @import "partial"
+    
+    
+### Mixins (functions)
+
+    @mixin firefox-message($selector) {
+        body.firefox #{$selector}:before {
+            content: "Hi, Firefox users!";
+        }
+    }
+    
+    @include firefox-message(".header")
+    
+    // is compiled to
+    body.firefox .header:before {
+      content: "Hi, Firefox users!"; }
+      
+### Math
 
 
